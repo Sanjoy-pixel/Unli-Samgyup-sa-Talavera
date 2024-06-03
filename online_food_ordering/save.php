@@ -1,0 +1,1 @@
+<a href="delete_cart.php?id=<?php echo $row['cid']?>" class="rem_cart btn btn-sm btn-outline-danger" data-id="<?php echo $row['cid'] ?>"><i class="fa fa-trash"></i></a>

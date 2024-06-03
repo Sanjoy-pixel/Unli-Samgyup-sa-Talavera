@@ -1,0 +1,575 @@
+html {
+    font-family: 'Rubik',sans-serif !important;
+}
+
+
+
+
+body{
+    width: 100%;
+    height: calc(100%);
+    /*background: #007bff;*/
+    
+}
+main#main{
+    width:100%;
+    height: calc(100%);
+    background:white;
+}
+#login-right{
+    position: absolute;
+    right:0;
+    width:40%;
+    height: calc(100%);
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+#login-left{
+    position: absolute;
+    left:0;
+    width:60%;
+    height: calc(100%);
+    background-image: url(../../../assets/img/final_logo2.jpg);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+#login-right .card{
+    margin: auto
+}
+
+
+
+
+
+
+/* form */
+
+
+
+/* 
+
+ -- 01 Typography System
+
+ -- SPACING SYSTEM (px)
+
+2     / 4    / 8  /  12   / 16 / 24 /  32  / 48 / 64 / 80 / 96 / 128
+0.125/ 0.25 / 0.5 / 0.75 /  1 / 1.5 /  2  /  3 /  4 /  5 / 6  /  8
+
+-- FONT SIZE SYSTEM (px)
+10    / 12   / 14   / 16 / 18   / 20   / 24  /  30   / 36   / 44   / 52   / 62    / 74    / 86    /   98
+0.625/ 0.75/ 0.875 /  1 / 1.125/ 1.25 / 1.5 / 1.875 / 2.25 / 2.75 / 3.25 / 3.875 / 4.625 / 5.375  / 6.125
+
+
+*/
+
+
+
+
+
+.admin-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+}
+
+
+.admin-form input, .admin-form select {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.125rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0,0,0, 0.1);
+ }
+
+
+ .admin-form input::placeholder{
+    color: #aaa;
+}
+
+.admin-form *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(253,242,233,0.5);
+
+}
+
+
+
+
+.check-box-password {
+    width: 18px !important;
+    
+}
+
+.show-password {
+   color: #aaa;
+}
+
+
+.margin-t {
+    margin-top: 0;
+}
+
+.show-pass-container {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.show-password {
+    font-size: 0.875rem;
+}
+
+
+.admin-form label {
+    display: block;
+    font-size:  1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: #fff;
+   
+   }
+   
+
+   .bg-color {
+
+    /* background-image: linear-gradient( to right bottom, #f6c1c1, #430f0f); */
+    background-color: transparent;
+    border: solid 1px #fff;
+   }
+
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+   
+}
+
+.btn--form:hover {
+    background-color: #fdf2e9;
+    color: #555;
+}
+
+
+.btn-pad {
+    padding: 0.54rem !important;
+    display: block !important;
+    font-size: 0.875rem !important;
+    font-weight: 400;
+}
+
+
+
+
+.margin-t {
+    margin-top: 0;
+}
+
+.margin-b {
+    margin-bottom: 0.75rem;
+}
+
+.logo {
+   
+}
+
+.testimonial-img {
+    width: 3rem;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+}
+
+
+
+
+
+/* Orders */
+
+.t-d {
+   
+    vertical-align: middle !important;
+    
+  }
+  
+
+
+  .t-h {
+    
+      vertical-align: middle !important;
+      
+    }
+
+
+  
+ .t-a-center {
+    text-align: center !important;
+ }
+
+  
+    .t-font {
+      
+       font-size: 0.80rem !important;
+    }  
+
+    .t-font-oder-btn {
+     padding: 6px 20px 6px 20px !important;
+     font-size: 12px;
+    }
+
+
+
+    .v-align {
+        vertical-align: middle !important;
+    }
+
+ 
+
+   .order-img {
+     width: 75% !important;
+     margin-bottom: 0.75rem;
+   } 
+
+
+   .btn-modal-pad{
+    padding:  6px 25px 6px 25px !important;
+    background-color: red !important;
+   }
+
+
+
+
+
+
+   
+   /*Monthly Weekly report   */
+
+   .vh-height {
+    height: 100vh !important; 
+    
+
+  
+}
+
+
+.grid-2-cols {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.grid-4-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    align-items: center;
+}
+
+.heading-primary {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+    letter-spacing: -0.5;
+    font-weight: 700;
+}
+
+
+.week-number {
+  
+ 
+   text-align: center;
+}
+
+.week-total-sales {
+ 
+  text-align: center;
+}
+
+.select-form {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Rubik',sans-serif !important;
+}
+
+
+.th-bg-color {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.t-number {
+    font-weight: 600;
+}
+
+/* Sales Report */
+
+
+.sales-report-container {
+    width: 100%;
+    
+}
+
+
+.grid-2-cols-sales-r {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.container-right-sales-r {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+
+
+}
+
+
+.buttons-container{
+    display: flex;
+    gap: 10px;
+}
+
+.date-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    font-weight: 600 !important;
+}
+
+.sales-heading {
+   
+    letter-spacing: -0.5px;
+    font-size: 40px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.el-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 5px;
+}
+
+
+.margin-top-sales-r {
+    margin-top: 60px;
+}
+
+
+.button-f-weight {
+    font-weight: 600 !important;
+}
+
+
+.bg-blue {
+    background-color: #0069d9;
+}
+
+.bg-red {
+    background-color: #c82333;
+}
+
+.link {
+    color: #fff;
+}
+
+.link:hover {
+    color: #fff; 
+}
+
+
+
+/* CLosing Time */
+
+
+
+
+.con-heading p {
+
+    color: #fe0000;
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+.color-white {
+    color: #fff !important;
+}
+
+
+.time {
+    color: #fff;
+
+}
+
+.time-days {
+    color: #fff;
+   
+}
+
+main.main{
+    width:100%;
+    height: calc(100%);
+    background:white;
+}
+.login-right{
+    position: absolute;
+    right:0;
+    width:40%;
+    height: calc(100%);
+    background-color: #111;
+   
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    
+}
+.login-left{
+    position: absolute;
+    left:0;
+    width:60%;
+    height: calc(100%);
+    background-image: linear-gradient( to right bottom, rgba(241, 231, 231, 0.205), rgba(15, 15, 15, 0.082)), url(../../../assets/img/final_logo2.jpg);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.login-right .card{
+    margin: auto
+}
+
+
+
+
+/* 
+
+ -- 01 Typography System
+
+ -- SPACING SYSTEM (px)
+
+2     / 4    / 8  /  12   / 16 / 24 /  32  / 48 / 64 / 80 / 96 / 128
+0.125/ 0.25 / 0.5 / 0.75 /  1 / 1.5 /  2  /  3 /  4 /  5 / 6  /  8
+
+-- FONT SIZE SYSTEM (px)
+10    / 12   / 14   / 16 / 18   / 20   / 24  /  30   / 36   / 44   / 52   / 62    / 74    / 86    /   98
+0.625/ 0.75/ 0.875 /  1 / 1.125/ 1.25 / 1.5 / 1.875 / 2.25 / 2.75 / 3.25 / 3.875 / 4.625 / 5.375  / 6.125
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Site Setting */
+
+.otime-heading {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+
+.otime-container {
+ margin-top: 48px;
+ margin-bottom: 48px;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 48px;
+
+ border: 1px solid #ced4da;
+ border-radius: 5px;
+ padding: 24px;
+
+}
+
+
+.time-container {
+    display: flex;
+    gap: 20px;
+}
+
+.input-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.colon {
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+.content-container {
+
+    margin-bottom: 48px;
+
+    border: 1px solid #ced4da;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.admin-session {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.admin-input {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.admin-input #min_admin {
+    align-self: flex-start;
+}
+
+
+.admin-content-container {
+
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    border: 1px solid #ced4da;
+    padding: 20px;
+    border-radius: 5px;
+}
